@@ -23,15 +23,15 @@ Display the output
 #Developed by : SANJAYKUMAR N B
 #Register number : 212223230189
 
-import sys
-count = 0
-with open (sys.argv[1],'r') as fl:
-    for line in fl:
-        word = line.split()
-        count += len(word)
-print("word count in file = ",count)
+num = 0
+with open("count.txt",'r') as fl:
+    for i in fl:
+        word = i.split()
+        num += len(word)
+print("The number of words are in the file is ",num)
 ```
 ### OUTPUT:
-![alt text](<Screenshot 2024-05-12 141109.png>)
+![alt text](<Screenshot 2024-05-12 144635.png>)
+![alt text](<Screenshot 2024-05-12 144244.png>)
 ## RESULT:
 Thus the program is written to find the word count from a text.
